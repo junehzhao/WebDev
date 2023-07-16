@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gots to Go!</title>
+  <style>
+    /* CSS for the header */
+    .header {
+      background-color: lightblue; /* Set the background color of the header to light blue */
+      text-align: center; /* Center align the header */
+      padding: 20px 0; /* Add padding to the header */
+    }
+
+    /* CSS for the menu bar */
+    .menu {
+      background-color: rgb(173, 216, 230);
+      overflow: hidden;
+      text-align: center; /* Center align the menu */
+    }
+    
+    .menu a {
+      display: inline-block; /* Display menu links horizontally */
+      padding: 14px 16px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
+    }
+
+    .menu a:hover {
+      background-color: #ddd;
+    }
+
+    /* CSS for the body */
+    body {
+      background-color: lightblue; /* Set the background color of the entire site to light blue */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* CSS for the content */
+    .content {
+      text-align: center; /* Center align the content */
+      margin-top: auto; /* Push the content to the bottom */
+      padding: 20px; /* Add padding for spacing */
+      font-size: 16px; /* Adjust the font size to a smaller size */
+      color: #000; /* Set the text color to black */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> <!-- Add Quicksand font -->
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Gots to Go!</h1> <!-- Update website name -->
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Accessible Restrooms in NYC</a> <!-- Update header -->
+    <a href="review.html">Review</a>
+    <a href="found-a-spot.html">Found a Spot?</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  
+  <style>
+    body {
+      background-color: rgb(173, 216, 230); /* Set the background color outside the form */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "Quicksand", Arial, sans-serif;
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ccc; /* Add a border to the form */
+      padding: 20px; /* Add padding inside the form */
+      border-radius: 5px; /* Add rounded corners to the form */
+      font-family: 'Quicksand', sans-serif; /* Set the font family for the form */
+      background-color: #fff; /* Set the background color inside the form */
+      max-width: 400px; /* Set the maximum width of the form */
+      width: 100%; /* Set the width to 100% of the available space */
+    }
+  
+    .contact-form label {
+      text-align: center; /* Center-align the labels */
+      display: flex; /* Align the label and checkbox on the same line */
+      align-items: center; /* Align items vertically within the label */
+    }
+  
+    .contact-form input[type="checkbox"] {
+      margin-left: 10px; /* Add margin between the label and checkbox */
+    }
+  </style>
+  
+  <form action="/submit" method="post" class="contact-form">
+    <h1>How Are We Doing?</h1> <!-- Display the form title -->
+  
+    <label for="first-name">First Name*</label><br> <!-- Prompt for the first name -->
+    <input type="text" id="first-name" name="first-name" required><br><br> <!-- Input field for the first name -->
+    
+    <label for="last-name">Last Name*</label><br> <!-- Prompt for the last name -->
+    <input type="text" id="last-name" name="last-name" required><br><br> <!-- Input field for the last name -->
+    
+    <label for="email">Email Address*</label><br> <!-- Prompt for the email address -->
+    <input type="email" id="email" name="email" required><br><br> <!-- Input field for the email address -->
+    
+    <label for="subscribe">
+      <span>Subscribe to Email Notifications</span> <!-- Prompt for subscribing to email notifications -->
+      <input type="checkbox" id="subscribe" name="subscribe"> <!-- Checkbox for subscribing to email notifications -->
+    </label><br><br>
+    
+    <label for="opinion">What Can We Improve On?*</label><br> <!-- Prompt for feedback or suggestions -->
+    <textarea id="opinion" name="opinion" rows="8" cols="40"></textarea><br><br> <!-- Text area for feedback or suggestions -->
+    
+    <input type="submit" value="Submit"> <!-- Submit button to submit the form -->
+  </form>
+
+
+  <!-- Content of your webpage -->
+  <div class="content">
+    <p>©2023 by June Zhao CSCI 39548</p>
+  </div>
+<body>
+</html>
+
+

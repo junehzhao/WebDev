@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gots to Go!</title>
+  <style>
+    /* CSS for the header */
+    .header {
+      background-color: lightblue; /* Set the background color of the header to light blue */
+      text-align: center; /* Center align the header */
+      padding: 20px 0; /* Add padding to the header */
+    }
+
+
+    /* CSS for the menu bar */
+    .menu {
+      background-color: rgb(173, 216, 230);
+      overflow: hidden;
+      text-align: center; /* Center align the menu */
+    }
+    
+    .menu a {
+      display: inline-block; /* Display menu links horizontally */
+      padding: 14px 16px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
+    }
+    
+    .menu a:hover {
+      background-color: #ddd;
+    }
+    
+    /* CSS for the body */
+    body {
+      background-color: lightblue; /* Set the background color of the entire site to light blue */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: "Quicksand", Arial, sans-serif;
+    }
+    
+    /* CSS to center the map */
+    .map-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; /* Add margin to adjust the spacing */
+      flex-grow: 1; /* Allow the map to grow and fill remaining space */
+    }
+
+    /* CSS for the content */
+    .content {
+      text-align: center; /* Center align the content */
+      margin-top: auto; /* Push the content to the bottom */
+      padding: 20px; /* Add padding for spacing */
+      font-size: 16px; /* Adjust the font size to a smaller size */
+      color: #000; /* Set the text color to black */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> <!-- Add Quicksand font -->
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Gots to Go!</h1> <!-- Update website name -->
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Accessible Restrooms in NYC</a> <!-- Update header -->
+    <a href="review.html">Review</a>
+    <a href="found-a-spot.html">Found a Spot?</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  
+  <!-- Centered embedded Google Maps iframe -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/d/embed?mid=18-M7pWWLrbLMO2GiECQOHYoTcpg74JQ&ehbc=2E312F" width="640" height="600"></iframe>
+  </div>
+  
+  <!-- Content of your webpage -->
+  <div class="content">
+    <p>©2023 by June Zhao CSCI 39548</p>
+  </div>
+</body>
